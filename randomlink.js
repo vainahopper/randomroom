@@ -5,9 +5,9 @@ const room4 = "https://meet.google.com/wrf-dfii-kku"
 
 const rooms = [room1, room2, room3, room4]
 
-const generatelink = () => {
+const generateLink = () => {
     const room = rooms[Math.floor(Math.random() * rooms.length)]
     return room;
-}
+};
 
-console.log(generatelink());
+document.getElementById("linkElementId").href = generateLink();
